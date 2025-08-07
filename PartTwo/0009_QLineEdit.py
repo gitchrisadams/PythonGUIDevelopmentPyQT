@@ -1,0 +1,26 @@
+from PyQt6.QtGui import QIcon, QFont
+from PyQt6.QtWidgets import QApplication, QWidget, QLineEdit
+import sys
+
+class Window(QWidget):
+    def __init__(self):
+        super().__init__()
+
+        # Window config
+        self.setGeometry(200, 200, 700, 400) # x pos, y pos, width, height
+        self.setWindowTitle("Python GUI Developments QLineEdit")
+        self.setWindowIcon(QIcon('images/python.png'))
+
+        # Line Edit
+        line_edit = QLineEdit(self)
+        line_edit.setFont(QFont("Sanserif", 15))
+        # line_edit.setText("Default Text")
+        line_edit.setPlaceholderText("Please enter your username")
+        # line_edit.setEnabled(False)
+        line_edit.setEchoMode(QLineEdit.EchoMode.Password)
+
+# Initial config of app
+app = QApplication(sys.argv)
+window = Window()
+window.show()
+sys.exit(app.exec())
