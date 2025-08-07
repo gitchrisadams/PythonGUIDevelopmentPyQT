@@ -19,4 +19,7 @@ Create a virtual env and type:
 https://pypi.org/project/pyqt6-tools/
 `pip install pyqt6-tools`
 
+## Sample app made in this repo
+### Calculator app
+<img width="570" height="477" alt="Screenshot 2025-08-07 141154" src="https://github.com/user-attachments/assets/01637f12-a241-4b37-be2b-601fd09c4f9f" />
 
